@@ -40,7 +40,7 @@ class PrototypesController < ApplicationController
     # すでに存在しているレコードを選択して中身を書き換える。
     # updateメソッドにはsaveが含まれている。既に画像はレコードにあるのでpresence :falseでも通る
     if @prototype.update(prototype_params)
-      redirect_to root_path
+      redirect_to prototype_path(@prototype)
     else
       render :edit, status: :unprocessable_entity
     end

@@ -8,8 +8,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.1]
       t.text   :profile,             null: false
       t.text   :occupation,          null: false
       t.text   :position,            null: false
-      t.string :occupation,          null: false
-      t.string :position,            null: false
 
       ## Database authenticatable
       t.string :email,              null: false, default: ""
